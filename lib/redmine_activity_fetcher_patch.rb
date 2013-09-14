@@ -6,7 +6,9 @@ module RedmineActivityFetcherPatch
     base.send(:include, InstanceMethods)
     base.class_eval do
       def default_scope!
-        @scope = Setting.send("plugin_redmine_default_activities")[:default_event_types].keys
+        settings = Setting.send("plugin_redmine_default_activities")[:default_event_types]
+        @scope = settings.keys if settings
+        []
       end
     end
   end
