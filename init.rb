@@ -1,4 +1,8 @@
 Redmine::Plugin.register :redmine_default_activities do
+  
+  # placholder to keep the hash from being removed
+  settings :default => {'default_event_types' => "", :dummy_setting => ""}, :partial => 'settings/default_activities_settings'
+  
   name 'Redmine Default Activities plugin'
   author 'Author name'
   description 'This is a plugin for Redmine'

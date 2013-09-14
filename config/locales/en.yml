@@ -1,3 +1,3 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  redmine_default_activities_settings_default_event_types: "Default Event Types"

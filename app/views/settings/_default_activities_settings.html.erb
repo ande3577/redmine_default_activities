@@ -1,0 +1,3 @@
+
+<p><%= plugin_setting_multiselect("redmine_default_activities", :default_event_types,
+        Redmine::Activity.available_event_types.collect {|e| [l_or_humanize(e, :prefix => "event_type_"), e.to_s]}) %></p>
