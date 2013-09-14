@@ -1,6 +1,7 @@
+require_dependency 'redmine_activity_fetcher_patch'
+
 Redmine::Plugin.register :redmine_default_activities do
-  
-  # placholder to keep the hash from being removed
+  # placeholder to keep the hash from being removed
   settings :default => {'default_event_types' => "", :dummy_setting => ""}, :partial => 'settings/default_activities_settings'
   
   name 'Redmine Default Activities plugin'
